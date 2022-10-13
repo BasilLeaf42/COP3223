@@ -1,0 +1,7 @@
+The Problem Statement:
+You are creating a program to help you understand some important math concepts: factorials and exponents.
+Since you are focused on understanding the concepts, you will not use the math library (math.h).
+
+One of those sections will be the function to calculate a factorial.
+Your function will take in a single non-negative integer (n) and you'll calculate n! or n factorial.
+To calculate n! you would calculate the following product: 1x2x3x...xn.

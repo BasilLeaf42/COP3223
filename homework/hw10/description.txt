@@ -1,0 +1,17 @@
+The Problem Statement
+You and your roommate are creating a secret code. 
+
+You have a rather simple scheme to express strings of letters as numbers.
+You realize that since there are only 26 different letters, a string of letters can be viewed as a number in base 26!
+For example, consider the word:
+
+COMPUTER
+
+You realize that we can just assign numeric values to the letters with A = 0, B = 1, C = 2, …, Z = 25 and then treat each letter location as the ones place, the 26 place, the 262 place and so forth.
+Thus, the value of COMPUTER would be:
+
+2x26^7 + 14x26^6 + 12x26^5 + 15x26^4 + 20x26^3 + 19x26^2 + 4x26^1 + 17x26^0.
+
+Fill in the two functions to encode and decode your messages.
+One function takes in a string and its length, and returns a number (stored in a data type called long long) equivalent to the string using the system described above.
+The second function will take in a number and the length of the corresponding word and print out the corresponding string that is the result of decoding the first number.

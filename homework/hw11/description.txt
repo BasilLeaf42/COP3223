@@ -1,0 +1,7 @@
+The Problem Statement:
+You and your roommate are combining your DVD collections.
+What you'd like to do is see which DVD's you have duplicate copies of, and then sell the extra copies on eBay, splitting the proceeds equally.
+To automate the process of determining how much money you expect to make, you decide to write a computer program.
+
+This function takes in two arrays of DVDs (representing your roommates' DVDs and your DVDs, respectively), the lengths of both arrays, and returns the sum of the sale prices of all the DVDs in both collections with the identical titles.
+If both of you share a DVD with the same title but different sale prices (the 7th edition always costs more than the 6th), assume that you'll sell the more expensive copy and keep the cheaper one, in an effort to maximize your return.

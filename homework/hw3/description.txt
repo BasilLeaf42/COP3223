@@ -1,0 +1,42 @@
+The Problem Statement:
+You and your roommates go through a lot of orange juice.
+Since you're living on a college budget, you've decided that it's critical for you to take advantage of the "Buy One Get One" (BOGO) free offers at the nearby grocery store.
+
+Program Setup:
+Your program should ask the user to enter the price of one carton of juice as well as the number of cartons being purchased.
+Note that since juice is an ordinary grocery item, no sales tax is charged on it.
+
+Then, determine the final cost of buying orange juice under the BOGO offer.
+While it is possible to make a solution that does not use If Statements, the purpose of the assignment is to practice with conditions.
+Make sure you take this opportunity to get the practice you need to master the programming concepts.
+
+You'll need to account for two different cases: buying an even number of OJ cartons and buying an odd number of OJ cartons.
+How can you determine if a number is even or odd?
+A number that is evenly divisible by 2 is even.
+An odd number has a remainder of 1 when divided by 2.
+Which arithmetic operator gives you the remainder?
+
+Sample Run:
+Here are two examples of what your program should look like when its finished. 
+
+What is the cost of one container of OJ in dollars?
+
+3.79
+
+How many containers are you buying?
+
+4
+
+The total cost is $7.58.
+
+---
+
+What is the cost of one container of OJ in dollars?
+
+4.50
+
+How many containers are you buying?
+
+5
+
+The total cost is $13.50.

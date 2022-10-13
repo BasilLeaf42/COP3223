@@ -1,0 +1,42 @@
+The Problem Statement:
+Your friend is starting a new business.
+She's gotten access to discounts all over town from stores, restaurants, and more.
+She's been selling her discounts to students but is having trouble keeping tabs on who owes her money.
+She's offered you a 20% cut of her total revenue to build a program that will track each student she sells to, the sale price of each item, and the amount of money she's collected from that person.
+
+Program Description:
+Your program will read information from an input from a file that stores information about every transaction you friend makes.
+You may assume that your roommate has no more than 100 customers and each customer is labeled 0 through 99.
+An array has already been created to store information about these customers.
+
+Your program will need to respond to three different commands:
+	1. Add a payment
+	2. Sell an item
+	3. Print messages for negative accounts
+
+For commands of types 1 and 2, your program should update the appropriate customer account.
+A command of type one adds value to the account and a command of type two subtracts value from an account.
+
+For commands of type 3, you should print out a message with the following format for each customer (in order of customer number) that has a negative account balance:
+
+Customer X, you owe $Y. Please pay immediately!
+
+where X is the account number and Y is the number of dollars owed (a positive amount).
+
+If all accounts are paid properly, then print out the single line:
+
+All accounts are paid up to date!!!
+
+These commands will come from an input file.
+
+Input File Format:
+The first line of the input file contains a single positive integer, n (n ≤ 1000), representing the number of commands to process. The commands follow, one per line.
+
+Each command line will start with an integer, 1, 2 or 3, corresponding to the types of commands listed above.
+For command types 1 and 2, this will be followed with a space and a second integer, ID (0 ≤ ID ≤ 99), representing the identification number of the customer for the transaction.
+This will be followed by another space and a positive integer, v (v ≤ 100), representing the amount of dollars for the transaction. Commands of type 3 will have no further information following them.
+
+Sample Run:
+There are three examples of what your program should look like when its finished.
+There are three input files (.txt) and the output is shown in the corresponding output file (.out).
+However, you do not need to create an output file in your program.

@@ -1,0 +1,14 @@
+Pseudocode is a high-level description of a computing process.
+It usually looks like code because pseudocode follows some of the common conventions of programming languages.
+It is not code, however, as it does not follow any particular programming language syntax.
+Instead, it is intended to be read by humans instead of computers.
+
+Many common algorithms are described by pseudocode.
+This allows us to have a common descriptor for an algorithm that can then be implemented in any programming language.
+It provides an outline for the solution that a programmer can then fill in.
+
+The Problem Statement and Program Setup:
+You have a collection of gnomes.
+Each gnome has a number so that they can be placed in numerical order.
+You wish to write a program to sort these gnomes.
+This function will perform a gnome sort to order the gnomes based on their assigned values.

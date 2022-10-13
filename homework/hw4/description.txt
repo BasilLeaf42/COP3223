@@ -1,0 +1,47 @@
+The Problem Statement:
+You and your roommates go through a lot of orange juice.
+You've noticed that your roommate goes through more orange juice than you do.
+And when they run out, they will take some of yours.
+
+You have been charging your roommate every time they take some of your orange juice.
+But it feels a bit silly collecting 50 or 75 cents at a time from them.
+You’ve come up with a brilliant plan!
+Instead of charging them every time they take your orange juice, you’ll collect money from them after they have taken 10 dollars worth of juice.
+
+Program Setup:
+Write a program to mimic this process.
+Ask the user to enter the size (in ounces) of the juice containers you buy, as well as the price of those containers (in dollars).
+Then prompt the user to enter how many times the roommate took juice. Finally, read the amount the roommate took each time.
+Every time the total value of the juice equals or exceeds $10, print out “Your roommate owes you $10.00.”
+After all the numbers are entered, if the roommate owes any money, print out the value owed.
+
+Sample Run:
+What is the weight (in oz.) of the original container of OJ?
+64
+What is the cost of the original container of OJ in dollars?
+3.79
+How many times did your roommate take your juice?
+10
+How much juice did your roommate take this time (in oz.)?
+30
+How much juice did your roommate take this time (in oz.)?
+34
+How much juice did your roommate take this time (in oz.)?
+24
+How much juice did your roommate take this time (in oz.)?
+40
+How much juice did your roommate take this time (in oz.)?
+64
+Your roommate owes you $10.00.
+How much juice did your roommate take this time (in oz.)?
+64
+How much juice did your roommate take this time (in oz.)?
+64
+How much juice did your roommate take this time (in oz.)?
+18
+Your roommate owes you $10.00.
+How much juice did your roommate take this time (in oz.)?
+20
+How much juice did your roommate take this time (in oz.)?
+20
+Your roommate owes you $2.38.

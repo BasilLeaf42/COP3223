@@ -1,0 +1,76 @@
+Background:
+
+For this assignment, you will write a small encryption utility that implements a simple encryption algorithm described below.
+The program will take one command line argument as an input; this will represent the word which is to be encrypted.
+As an output, your program will print the encrypted version of the word to the console using a simple printf() statement.
+This is the only output your program needs to produce.
+
+There is an important catch, however: your program is going to be left intentionally vulnerable to a format string attack (also explained below).
+Though it will still “work” as intended if it is used appropriately with the expected input, it should be possible to exploit the program in order to produce something other than the desired output.
+In short, your program will be “hackable.”
+
+Command-Line Input:
+
+If you have not yet written a program that takes arguments at run-time via the command line, this will be worth exploring before starting the rest of the assignment.
+In short, it is possible to redefine main() in such a way that it can take input when the program is initially run.
+Your new definition of main should look something like this:
+
+int main(int argc, char** argv) {
+
+     // your code below
+
+}
+
+Here, the integer “argc” represents the counter of arguments (counting ./a.out as the first argument), and the string array “argv” stores those arguments.
+For example, if the program was run using this command:
+
+./a.out myArg1 myArg2 myArg3
+
+Then argc would be equal to 4 (representing the four arguments, with ./a.out being the first and myArg3 being the last), argv[0] would store “./a.out”, argv[1] would store “myArg1”, argv[2] would store “myArg2”, and so on.
+
+Your program should take one additional argument, representing the word to be encrypted.
+That means it should be run like this:
+
+./a.out thisIsTheWordThatMyProgramWillEncrypt
+
+Note here that argc == 2 and argv[1] == “thisIsTheWordThatMyProgramWillEncrypt” (of course, any string will work here as long as it does not contain spaces).
+
+The Encryption Algorithm:
+
+You will implement a simple XOR encryption against the word that is passed in as a command-line argument.
+If you are unfamiliar with XOR in general or in C, please see the following resource before continuing with this assignment:
+https://www.geeksforgeeks.org/bitwise-operators-in-c-cpp/
+
+Your encryption algorithm will work as follows:
+
+1. A hard-coded hexadecimal integer will represent the secret encryption key.\
+   In most cases, to keep the encryption secure, this key must be kept secret; ultimately, you will write your program in such a way that it is possible to “hack” it and recover the key using an exploit in the C language.
+   You can use whatever you like here, but it must spell a valid English word and it must be declared inside main as an int.
+   Here are some ideas to get you started:
+	1. BA55C1EF -> bass clef
+	2. B01DFACED -> boldfaced
+	3. C0FFEBEAD -> coffee bead (there’s no N in hex, unfortunately)
+
+Anything similar to the above can work, as long as it is a valid hexadecimal integer that can represent an English word or phrase.
+This will help the graders to easily identify your key when it appears later on.
+
+2. Each letter of the input string will be XOR’d against the encryption key. You should use some kind of loop structure that looks like this:
+
+int key = 0xBA55C1EF
+
+for i from 0 to the length of the string:
+
+          string[i] = string[i] ^ key
+
+Format String Attack:
+
+A format string attack is a type of injection attack that takes advantage of undefined behavior in the C language specification for printf() (the same printf() you’ve been using all semester).
+For this program, you must write your final printf() statement in such a way that it is vulnerable to a format string attack.
+To get you started, see the following reference:
+https://www.geeksforgeeks.org/format-string-vulnerability-and-prevention-with-example/
+
+Output:
+
+Your program will only produce a single line of output, which in most cases is the newly encrypted string.
+To receive full credit, however, you must print your string in such a way that it is vulnerable to the format string attack described above.
+To verify that your program is working, try to run it with a format string attack of your own: you will know that it is working when they secret key you declared inside your program is clearly visible in the console.

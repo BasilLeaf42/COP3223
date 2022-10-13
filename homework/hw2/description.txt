@@ -1,0 +1,18 @@
+The Problem Statement:
+Ever since you got to college, your parents have been warning you about the freshman fifteen!
+You've decided that to combat the extra weight gain, you're going to write a program with your new programming skills to help you!
+
+You'd like to keep track of how many calories you are consuming.
+You are hoping that keeping track of this information will nudge you into making better food choices.
+Luckily, the foods you eat are labeled with the number of grams of protein, carbohydrates and fat they contain.
+
+Program Setup:
+Use these constants to represent the number of calories in each gram of protein, carbohydrates, and fat respectively,
+
+#define CALS_PER_GR_PROTEIN 4
+#define CALS_PER_GR_CARB 4
+#define CALS_PER_GR_FAT 9
+
+Write a program that asks the user to enter the grams of protein, carbohydrates and fat that they consumed.
+Remember to create variables for these values, prompt the user for the information, and use the correct percent codes in your scanfs.
+Calculate the total number of calories consumed based on the constants and print the result for the user to see.
